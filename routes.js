@@ -10,14 +10,16 @@ console.log(Object.keys(info));
 let arrayOfHeroes = info.results;
 
 router.get('/', async(request, response) => {
-  let firstHero = arrayOfHeroes[0];
-  console.log(firstHero);
-  for (item in firstHero) {
-    if (firstHero.hasOwnProperty(item)) {
-      console.log(item,': ', typeof firstHero[item]);
-    }
-  }
-  response.render('main', { arrayOfHeroes });
+  // let firstHero = arrayOfHeroes.splice(1);
+  // console.log(firstHero);
+  // for (item in firstHero) {
+  //   if (firstHero.hasOwnProperty(item)) {
+  //     console.log(item,': ', typeof firstHero[item]);
+  //   }
+  // }
+  let arrayToShow = arrayOfHeroes.slice(0,2);
+  console.log(arrayToShow);
+  response.render('main', { arrayToShow });
 });
 
 /* router.post('/messages', async(request, response) => {

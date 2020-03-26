@@ -1,0 +1,29 @@
+.hero-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  padding: 2%;
+}
+
+.hero {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: space-between;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin: 2% 2%;
+}
+.hero-pic {
+  width: 45%;
+}
+
+.hero-pic img {
+  width: 100%;
+}
+
+.hero-info {
+  width: 45%;
+}

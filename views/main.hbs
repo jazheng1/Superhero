@@ -1,13 +1,5 @@
-{{#if firstHero}}
-<div class="hero">
-  <div>
-    {{firstHero.name}}
-  </div>
-</div>
-{{/if}}
-
-
-{{#each arrayOfHeroes}}
-{{id}}
-{{name}}
+<div class="hero-container">
+{{#each arrayToShow}}
+{{> heroTeaser}}
 {{/each}}
+</div>
