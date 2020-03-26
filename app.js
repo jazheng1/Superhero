@@ -30,9 +30,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: 'hello' }));
 
 
-//let dbConfig = require(app.root('knexfile'));
-// let knex = Knex(dbConfig[process.env.NODE_ENV]);
-// Model.knex(knex);
+let dbConfig = require(app.root('knexfile'));
+let knex = Knex(dbConfig[process.env.NODE_ENV]);
+Model.knex(knex);
 
 let routes = require('./routes');
 app.use('/', routes);
