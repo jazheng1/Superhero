@@ -1,8 +1,5 @@
-let getHeroes = require('./getHeroes');
 
-let arrayOfHeroes = getHeroes();
-
-function findGroups() {
+function findGroups(arrayOfHeroes) {
   const groups = [];
   for (let hero of arrayOfHeroes) {
     let connections = hero.connections;

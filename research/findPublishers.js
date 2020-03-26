@@ -1,7 +1,5 @@
-let getHeroes = require('./getHeroes');
-let arrayOfHeroes = getHeroes();
 
-function findPublishers() {
+function findPublishers(arrayOfHeroes) {
   const publishers = [];
   for (let hero of arrayOfHeroes) {
     let bio = hero.biography;

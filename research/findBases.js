@@ -1,7 +1,5 @@
-let getHeroes = require('./getHeroes');
-let arrayOfHeroes = getHeroes();
 
-function findBases() {
+function findBases(arrayOfHeroes) {
   const bases = [];
   for (let hero of arrayOfHeroes) {
     let work = hero.work;
