@@ -1,0 +1,27 @@
+{
+  "name": "superhero",
+  "version": "1.0.0",
+  "description": "superhero profiles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazheng1/Superhero.git"
+  },
+  "keywords": [
+    "superhero",
+    "network",
+    "json"
+  ],
+  "author": "Jason Zheng, Will Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jazheng1/Superhero/issues"
+  },
+  "homepage": "https://github.com/jazheng1/Superhero#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
