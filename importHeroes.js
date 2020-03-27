@@ -38,5 +38,5 @@ async function importHeroes(heroes) {
 }
 
 (async () => {
-  importHeroes(arrayOfHeroes);
+  await importHeroes(arrayOfHeroes);
 })();
