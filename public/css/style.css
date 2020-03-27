@@ -6,6 +6,19 @@
   padding: 2%;
 }
 
+.hero-teaser {
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin: 2% 2%;
+}
+
+.hero-teaser-pic {
+  margin: 2% auto;
+}
+
 .hero {
   display: flex;
   flex-flow: row;
@@ -18,6 +31,7 @@
 }
 .hero-pic {
   width: 45%;
+
 }
 
 .hero-pic img {
@@ -28,9 +42,35 @@
   width: 45%;
 }
 
+#search {
+  position: relative;
+  top: 45%;
+  align-content: center;
+  width: 100%;
+}
 
-#id {
-position: relative;
-top: 50%;
+.center {
+  margin: 0 auto;
+}
 
+.center img {
+  width: 100%;
+}
+
+.search-bar {
+  width: 50%;
+}
+
+input {
+  width: 50%;
+  height: auto;
+  font-family: Helvetica, sans-serif;
+  border: solid black 1px;
+  border-radius: 25px;
+}
+
+button {
+  width: 25%;
+  height: auto;
+  border-radius: 25px;
 }

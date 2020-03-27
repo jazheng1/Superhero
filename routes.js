@@ -2,6 +2,7 @@ let Router = require('express-promise-router');
 let router = new Router();
 
 let getHeroes = require('./research/getHeroes');
+let Superhero = require('./models/Superhero');
 
 
 router.get('/', async(request, response) => {
@@ -14,6 +15,12 @@ router.get('/', async(request, response) => {
 
 router.post('/search', async(request, response) => {
   let searchTerm = request.body.term;
+  console.log(searchTerm);
+  let heroes = await Superhero.query()
+    .where('name', searchTerm);
+
+  console.log(heroes);
+  response.render('main', { heroes });
 
 
 })
