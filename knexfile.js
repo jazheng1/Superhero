@@ -5,6 +5,9 @@ module.exports = {
     debug: true,
     migrations: {
       tableName: 'knex_migrations',
+    },
+    seeds: {
+      tableName: 'knex_seeds',
     }
   },
 
@@ -13,6 +16,9 @@ module.exports = {
     connection: 'postgres://localhost:5432/superhero_test',
     migrations: {
       tableName: 'knex_migrations',
+    },
+    seeds: {
+      tableName: 'knex_seeds'
     }
   },
 
@@ -21,6 +27,9 @@ module.exports = {
     connection: process.env.DATABASE_URL,
     migrations: {
       tableName: 'knex_migrations',
+    },
+    seeds: {
+      tableName: 'knex_seeds'
     },
     pool: {
       min: 2,

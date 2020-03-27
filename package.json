@@ -8,7 +8,8 @@
     "db:drop": "dropdb superhero_development && dropdb superhero_test",
     "start": "DEBUG=\"${DEBUG:=Superhero:*}\" node ./bin/server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx eslint"
+    "lint": "npx eslint",
+    "import:heroes": "cross-env NODE_ENV=development node importHeroes.js"
   },
   "repository": {
     "type": "git",

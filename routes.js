@@ -12,6 +12,12 @@ router.get('/', async(request, response) => {
   response.render('main', { arrayToShow });
 });
 
+router.post('/search', async(request, response) => {
+  let searchTerm = request.body.term;
+
+
+})
+
 /* router.post('/messages', async(request, response) => {
 
   let hero =

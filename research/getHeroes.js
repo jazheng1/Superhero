@@ -17,7 +17,7 @@ function getHeroes(file) {
 }
 
 if (require.main === module) {
-  console.log(getHeroes());
+  console.log(getHeroes('../data/all-heroes.json'));
 }
 
 module.exports = getHeroes;

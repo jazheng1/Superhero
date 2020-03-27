@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
   return knex.schema.createTable('heroes', (table) => {
-    table.integer('id').primary();
+    table.increments('id').primary();
     table.text('name').notNullable();
     table.text('publisher');
     table.text('alignment');
@@ -9,11 +9,18 @@ exports.up = function(knex) {
     table.text('race');
     table.text('height');
     table.text('weight');
-    table.text('eye-color');
-    table.text('hair-color');
+    table.text('eye_color');
+    table.text('hair_color');
     table.text('occupation');
     table.text('base');
-    table.text('image-url');
+    table.text('image_url');
+    table.integer('intelligence');
+    table.integer('strength');
+    table.integer('speed');
+    table.integer('durability');
+    table.integer('power');
+    table.integer('combat');
+
   });
 };
 
