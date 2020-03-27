@@ -29,12 +29,12 @@ class Superhero extends Model {
         occupation: {type: 'string'},
         base: {type: 'string'},
         imageUrl: {type: 'string'},
-        intelligence: {type: 'integer'},
-        strength: {type: 'integer'},
-        speed: {type: 'integer'},
-        durability: {type:'integer'},
-        power: {type: 'integer'},
-        combat: {type: 'integer'}
+        intelligence: {type: ['integer', 'null']},
+        strength: {type:  ['integer', 'null']},
+        speed: {type:  ['integer', 'null']},
+        durability: {type: ['integer', 'null']},
+        power: {type:  ['integer', 'null']},
+        combat: {type: ['integer', 'null']}
       }
     }
   }

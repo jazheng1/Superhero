@@ -6,10 +6,15 @@ function getHeroes(file) {
   let arrayOfHeroes = info.results;
 
   for (let hero of arrayOfHeroes) {
+
     hero.id = Number(hero.id);
     for (let item in hero.powerstats) {
       if (hero.powerstats.hasOwnProperty(item)) {
-        hero.powerstats[item] = Number(hero.powerstats[item]);
+        if (hero.powerstats[item] === "null") {
+          hero.powerstats[item] = null;
+        } else {
+          hero.powerstats[item] = Number(hero.powerstats[item]);
+        }
       }
     }
   }

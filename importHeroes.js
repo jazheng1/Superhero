@@ -11,11 +11,10 @@ let arrayOfHeroes = getHeroes('./data/all-heroes.json');
 // SELECT id, superhero_id FROM heroes;
 // superhero_id => id
 
-console.log(arrayOfHeroes);
 async function importHeroes(heroes) {
-  return await Superhero.query().insertWithRelated(heroes.map((hero) => {
+  return await Superhero.query().insertGraph(heroes.map((hero) => {
+    console.log(hero.powerstats.intelligence);
     return {
-      id: hero.id,
       name: hero.name,
       publisher: hero.biography.publisher,
       alignment: hero.biography.alignment,
@@ -39,5 +38,5 @@ async function importHeroes(heroes) {
 }
 
 (async () => {
-  await importHeroes(arrayOfHeroes);
+  importHeroes(arrayOfHeroes);
 })();
