@@ -1,9 +1,10 @@
-<div class="hero">
-  <div class="hero-pic"><img src="{{imageUrl}}" alt="photo of superhero" width="60%" height="auto"></div>
+<div class="hero-profile">
+  <div class="hero-pic"><img src="{{imageUrl}}" alt="photo of superhero" class="responsive-img"></div>
   <div class="hero-info">
-    <div class="hero-id">Id: {{id}}</div>
-    <div class="hero-name">Name: {{name}}</div>
+    <div class="hero-name"><h2>{{name}}</h2></div>
+    <div class="divider"></div>
     <div class="powerstats">
+      <h4>Powerstats:</h4>
       <ul>
         <li>Intelligence: {{intelligence}}</li>
         <li>Strength: {{strength}}</li>
@@ -13,7 +14,21 @@
         <li>Combat: {{combat}}</li>
       </ul>
     </div>
-    <div class="background">
+    <div class="divider"></div>
+    <div class="work">
+      <h4>{{base}}</h4>
+      <h5>{{occupation}}</h5>
+    </div>
+    <div class="divider"></div>
+    <div class="physical">
+      <ul>
+        <li>Gender: {{gender}}</li>
+        <li>Race: {{race}}</li>
+        <li>Height: {{height}}</li>
+        <li>Weight: {{weight}}</li>
+        <li>Eye color: {{eyeColor}}</li>
+        <li>Hair color: {{hairColor}}</li>
+      </ul>
     </div>
 
   </div>
