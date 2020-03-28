@@ -13,8 +13,8 @@ router.get('/', async(request, response) => {
   response.render('main', { arrayToShow });
 });
 
-router.post('/search', async(request, response) => {
-  let searchTerm = request.body.term;
+router.get('/search', async(request, response) => {
+  let searchTerm = request.query.term;
   console.log('Searching heroes with term: ' ,searchTerm);
   let heroes = await Superhero.query()
     .where('name', 'ilike', `%${searchTerm}%`);
@@ -22,8 +22,7 @@ router.post('/search', async(request, response) => {
   console.log(heroes);
   response.render('main', { heroes });
 
-
-})
+});
 
 /* router.post('/messages', async(request, response) => {
 
