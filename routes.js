@@ -15,9 +15,9 @@ router.get('/', async(request, response) => {
 
 router.post('/search', async(request, response) => {
   let searchTerm = request.body.term;
-  console.log(searchTerm);
+  console.log('Searching heroes with term: ' ,searchTerm);
   let heroes = await Superhero.query()
-    .where('name', searchTerm);
+    .where('name', 'ilike', `%${searchTerm}%`);
 
   console.log(heroes);
   response.render('main', { heroes });
