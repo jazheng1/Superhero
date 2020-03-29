@@ -5,17 +5,29 @@
   <div class="hero-info">
     <div class="hero-name"><h2>{{name}}</h2></div>
     <div class="hero-full-name"><h3>{{fullName}}</h3></div>
+    <div class="hero-alignment">
+      <h5><em>{{alignment}}</em></h5>
+    </div>
+
     <div class="divider"></div>
     <div class="powerstats">
       <h4>Powerstats:</h4>
-      <ul>
-        <li>Intelligence: {{intelligence}}</li>
-        <li>Strength: {{strength}}</li>
-        <li>Speed: {{speed}}</li>
-        <li>Durability: {{durability}}</li>
-        <li>Power: {{power}}</li>
-        <li>Combat: {{combat}}</li>
-      </ul>
+      <div class="row">
+        <div class="col s6">
+          <ul>
+            <li>Intelligence: {{intelligence}}</li>
+            <li>Strength: {{strength}}</li>
+            <li>Speed: {{speed}}</li>
+          </ul>
+        </div>
+        <div class="col s6">
+          <ul>
+            <li>Durability: {{durability}}</li>
+            <li>Power: {{power}}</li>
+            <li>Combat: {{combat}}</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="divider"></div>
     <div class="work">
@@ -24,14 +36,22 @@
     </div>
     <div class="divider"></div>
     <div class="physical">
-      <ul>
-        <li>Gender: {{gender}}</li>
-        <li>Race: {{race}}</li>
-        <li>Height: {{height}}</li>
-        <li>Weight: {{weight}}</li>
-        <li>Eye color: {{eyeColor}}</li>
-        <li>Hair color: {{hairColor}}</li>
-      </ul>
+      <div class="row">
+        <div class="col s6">
+          <ul>
+            <li>Gender: {{gender}}</li>
+            <li>Race: {{race}}</li>
+            <li>Height: {{height}}</li>
+          </ul>
+        </div>
+        <div class="col s6">
+          <ul>
+            <li>Weight: {{weight}}</li>
+            <li>Eye color: {{eyeColor}}</li>
+            <li>Hair color: {{hairColor}}</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
