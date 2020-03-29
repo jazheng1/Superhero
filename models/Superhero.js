@@ -34,7 +34,9 @@ class Superhero extends Model {
         speed: {type:  ['integer', 'null']},
         durability: {type: ['integer', 'null']},
         power: {type:  ['integer', 'null']},
-        combat: {type: ['integer', 'null']}
+        combat: {type: ['integer', 'null']},
+        aliases: {type: 'string'},
+        fullName: {type: 'string'},
       }
     }
   }
