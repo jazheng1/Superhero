@@ -33,7 +33,8 @@ async function importHeroes(heroes) {
       durability: hero.powerstats.durability,
       power: hero.powerstats.power,
       combat: hero.powerstats.power,
-      aliases: hero.biography.aliases.join(', ')
+      aliases: hero.biography.aliases.join(', '),
+      fullName: hero.biography['full-name']
     };
   }));
 }
