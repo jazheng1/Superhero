@@ -20,7 +20,7 @@ router.get('/search', async(request, response) => {
     .where('name', 'ilike', `%${searchTerm}%`);
 
   console.log(heroes);
-  response.render('main', { heroes });
+  response.render('main', { heroes, searchTerm });
 
 });
 

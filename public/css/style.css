@@ -1,5 +1,12 @@
 body {
-  font-family: 'Bangers', cursive !important;}
+  font-family: 'Bangers', cursive !important;
+}
+
+#header-title {
+  font-size: 10rem;
+  width: fit-content;
+  margin: 2% auto;
+}
 
 .hero-container {
   display: flex;
